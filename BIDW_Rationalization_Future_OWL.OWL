@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdfs:Class rdf:about="http://semoss.org/ontologies/Concept"/>
+<rdf:Property rdf:about="http://semoss.org/ontologies/Relation"/>
+<rdf:Description rdf:about="SEMOSS:ENGINE_METADATA">
+	<BASE_URI xmlns="CONTAINS:" rdf:resource="http://semoss.org/ontologies/Concept/"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/System/System">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/System"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Interface/Interface">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Interface"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Interface.System_FK.System.System">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/System/System">
+	<Interface.System_FK.System.System xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Interface/Interface"/>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/Notes_Assumptions/Interface"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Interface/Interface">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/Notes_Assumptions/Interface">
+			<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/Notes_Assumptions/Interface"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/System.Interface_FK.Interface.Interface">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Interface/Interface">
+	<System.Interface_FK.Interface.Interface xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/System/System"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/DataObject/DataObject">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/DataObject"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/DataObject.Interface_FK.Interface.Interface">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Interface/Interface">
+	<DataObject.Interface_FK.Interface.Interface xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/DataObject/DataObject"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Frequency/Frequency">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Frequency"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Frequency.Interface_FK.Interface.Interface">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Interface/Interface">
+	<Frequency.Interface_FK.Interface.Interface xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Frequency/Frequency"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Functional_Layer"/>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY18_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY18_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY18_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY18_No_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY18_No_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY18_No_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY19_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY19_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY19_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY19_No_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY19_No_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY19_No_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY20_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY20_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY20_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY20_No_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY20_No_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY20_No_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY21_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY21_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY21_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY21_No_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY21_No_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY21_No_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY22_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY22_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY22_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY22_No_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY22_No_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY22_No_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY23_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY23_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY23_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:about="http://semoss.org/ontologies/Relation/Contains/FY23_No_Action/Functional_Layer"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FY23_No_Action/Functional_Layer">
+			<rdfs:Class rdf:resource="TYPE:FLOAT"/>
+			<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FY23_No_Action/Functional_Layer"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Functional_Layer.System_FK.System.System">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/System/System">
+	<Functional_Layer.System_FK.System.System xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Functional_Layer/Functional_Layer"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/TimeStamp">
+	<TIME xmlns="ENGINE:">2018:03:01 09:50:28</TIME>
+</rdf:Description>
+
+</rdf:RDF>
